@@ -1,0 +1,526 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "brandCode": "01",
+            "brandName": "\u0e40\u0e04\u0e47\u0e19\u0e17\u0e4c"
+        },
+        {
+            "id": 2,
+            "brandCode": "02",
+            "brandName": "\u0e2d\u0e32\u0e0b\u0e32\u0e2e\u0e35"
+        },
+        {
+            "id": 3,
+            "brandCode": "03",
+            "brandName": "\u0e2d\u0e32\u0e0a\u0e34\u0e42\u0e15\u0e49\u0e44\u0e01"
+        },
+        {
+            "id": 4,
+            "brandCode": "04",
+            "brandName": "\u0e40\u0e2d\u0e2a.\u0e17\u0e35.\u0e0b\u0e35.\u0e2d\u0e35."
+        },
+        {
+            "id": 5,
+            "brandCode": "05",
+            "brandName": "\u0e42\u0e1f\u0e25\u0e19\u0e34\u0e04"
+        },
+        {
+            "id": 6,
+            "brandCode": "06",
+            "brandName": "\u0e40\u0e21\u0e40\u0e19\u0e40\u0e01\u0e49"
+        },
+        {
+            "id": 7,
+            "brandCode": "07",
+            "brandName": "\u0e41\u0e2d\u0e2a\u0e40\u0e15\u0e2d\u0e23\u0e4c"
+        },
+        {
+            "id": 8,
+            "brandCode": "08",
+            "brandName": "\u0e04\u0e2d\u0e19\u0e15\u0e34\u0e21\u0e34\u0e40\u0e15\u0e2d\u0e23\u0e4c"
+        },
+        {
+            "id": 9,
+            "brandCode": "09",
+            "brandName": "\u0e1a\u0e2d\u0e2a\u0e42\u0e01"
+        },
+        {
+            "id": 10,
+            "brandCode": "10",
+            "brandName": "\u0e2d\u0e2d\u0e2a\u0e40\u0e0b\u0e25"
+        },
+        {
+            "id": 11,
+            "brandCode": "11",
+            "brandName": "\u0e41\u0e21\u0e04\u0e04\u0e32\u0e25\u0e34\u0e19\u0e32"
+        },
+        {
+            "id": 12,
+            "brandCode": "12",
+            "brandName": "\u0e17\u0e35.\u0e14\u0e31\u0e1a\u0e1a\u0e25\u0e34\u0e27.\u0e27\u0e35."
+        },
+        {
+            "id": 13,
+            "brandCode": "13",
+            "brandName": "\u0e0b\u0e35.\u0e14\u0e35.\u0e0b\u0e35."
+        },
+        {
+            "id": 14,
+            "brandCode": "14",
+            "brandName": "\u0e44\u0e17\u0e22\u0e2d\u0e32\u0e0a\u0e34, \u0e44\u0e17\u0e22\u0e2d\u0e34\u0e0a\u0e34"
+        },
+        {
+            "id": 15,
+            "brandCode": "15",
+            "brandName": "\u0e44\u0e27\u0e25\u0e17\u0e4c\u0e41\u0e21\u0e47\u0e04 (Wallmac)"
+        },
+        {
+            "id": 16,
+            "brandCode": "16",
+            "brandName": "\u0e04\u0e25\u0e32\u0e2a\u0e0b\u0e35"
+        },
+        {
+            "id": 17,
+            "brandCode": "17",
+            "brandName": "\u0e2a\u0e25\u0e34\u0e21\u0e40\u0e1a\u0e2d\u0e23\u0e4c\u0e40\u0e01\u0e2d\u0e23\u0e4c"
+        },
+        {
+            "id": 18,
+            "brandCode": "18",
+            "brandName": "NITTOSEICO"
+        },
+        {
+            "id": 19,
+            "brandCode": "19",
+            "brandName": "ROLEX"
+        },
+        {
+            "id": 20,
+            "brandCode": "20",
+            "brandName": "ZAI"
+        },
+        {
+            "id": 21,
+            "brandCode": "21",
+            "brandName": "CHAMPION"
+        },
+        {
+            "id": 22,
+            "brandCode": "22",
+            "brandName": "\u0e41\u0e2d\u0e25\u0e0b\u0e35"
+        },
+        {
+            "id": 23,
+            "brandCode": "23",
+            "brandName": "AMI"
+        },
+        {
+            "id": 24,
+            "brandCode": "24",
+            "brandName": "IVZ"
+        },
+        {
+            "id": 25,
+            "brandCode": "25",
+            "brandName": "POLUK"
+        },
+        {
+            "id": 26,
+            "brandCode": "26",
+            "brandName": "\u0e21\u0e34\u0e25\u0e32\u0e42\u0e19"
+        },
+        {
+            "id": 27,
+            "brandCode": "27",
+            "brandName": "\u0e2d\u0e30\u0e15\u0e32\u0e42\u0e01"
+        },
+        {
+            "id": 28,
+            "brandCode": "28",
+            "brandName": "\u0e27\u0e2d\u0e40\u0e15\u0e2d\u0e23\u0e4c\u0e21\u0e34\u0e40\u0e15\u0e2d\u0e23\u0e4c"
+        },
+        {
+            "id": 29,
+            "brandCode": "29",
+            "brandName": "\u0e41\u0e0b\u0e01\u0e0a\u0e34"
+        },
+        {
+            "id": 30,
+            "brandCode": "30",
+            "brandName": "ZIZMA"
+        },
+        {
+            "id": 31,
+            "brandCode": "31",
+            "brandName": "\u0e44\u0e0a\u0e19\u0e48\u0e32"
+        },
+        {
+            "id": 32,
+            "brandCode": "32",
+            "brandName": "SAPANNER"
+        },
+        {
+            "id": 33,
+            "brandCode": "33",
+            "brandName": "P.C."
+        },
+        {
+            "id": 34,
+            "brandCode": "34",
+            "brandName": "P.B."
+        },
+        {
+            "id": 35,
+            "brandCode": "35",
+            "brandName": "G.C."
+        },
+        {
+            "id": 36,
+            "brandCode": "36",
+            "brandName": "AD (\u0e41\u0e2d\u0e19\u0e40\u0e14\u0e23\u0e35\u0e22)"
+        },
+        {
+            "id": 37,
+            "brandCode": "37",
+            "brandName": "Schlumberger"
+        },
+        {
+            "id": 0,
+            "brandCode": "00",
+            "brandName": "\u0e44\u0e21\u0e48\u0e44\u0e14\u0e49\u0e23\u0e30\u0e1a\u0e38"
+        },
+        {
+            "id": 38,
+            "brandCode": "38",
+            "brandName": "Hannovevo"
+        },
+        {
+            "id": 39,
+            "brandCode": "39",
+            "brandName": "WOLIMAG"
+        },
+        {
+            "id": 40,
+            "brandCode": "40",
+            "brandName": "ROLEX"
+        },
+        {
+            "id": 41,
+            "brandCode": "41",
+            "brandName": "CHAMPION"
+        },
+        {
+            "id": 42,
+            "brandCode": "42",
+            "brandName": "LOTUS"
+        },
+        {
+            "id": 43,
+            "brandCode": "43",
+            "brandName": "\u0e40\u0e2d\u0e04\u0e15\u0e32\u0e23\u0e34\u0e2a\u0e4c"
+        },
+        {
+            "id": 44,
+            "brandCode": "44",
+            "brandName": "woltex"
+        },
+        {
+            "id": 45,
+            "brandCode": "45",
+            "brandName": "TDM"
+        },
+        {
+            "id": 46,
+            "brandCode": "46",
+            "brandName": "siemens"
+        },
+        {
+            "id": 47,
+            "brandCode": "47",
+            "brandName": "\u0e40\u0e0b\u0e19\u0e0b\u0e31\u0e2a"
+        },
+        {
+            "id": 48,
+            "brandCode": "48",
+            "brandName": "ITRON"
+        },
+        {
+            "id": 50,
+            "brandCode": "50",
+            "brandName": "\u0e04\u0e2d\u0e19\u0e15\u0e34\u0e40\u0e01\u0e35\u0e22\u0e23\u0e4c (CONTIGEA)"
+        },
+        {
+            "id": 51,
+            "brandCode": "51",
+            "brandName": "WOZMAC"
+        },
+        {
+            "id": 52,
+            "brandCode": "52",
+            "brandName": "WLOWNOG"
+        },
+        {
+            "id": 53,
+            "brandCode": "53",
+            "brandName": "SLEC"
+        },
+        {
+            "id": 54,
+            "brandCode": "54",
+            "brandName": "\u0e40\u0e2d\u0e47\u0e21\u0e17\u0e35\u0e1e\u0e35 (MTP)"
+        },
+        {
+            "id": 55,
+            "brandCode": "55",
+            "brandName": "\u0e41\u0e2e\u0e19\u0e19\u0e32\u0e40\u0e22\u0e2d\u0e23\u0e4c"
+        },
+        {
+            "id": 56,
+            "brandCode": "56",
+            "brandName": "\u0e04\u0e2d\u0e25\u0e41\u0e1f\u0e23\u0e4c"
+        },
+        {
+            "id": 57,
+            "brandCode": "57",
+            "brandName": "\u0e17\u0e32\u0e40\u0e27\u0e35\u0e22\u0e23\u0e48\u0e32"
+        },
+        {
+            "id": 58,
+            "brandCode": "58",
+            "brandName": "ARAD"
+        },
+        {
+            "id": 59,
+            "brandCode": "59",
+            "brandName": "\u0e0b\u0e34\u0e01\u0e42\u0e01 (SCIKO)"
+        },
+        {
+            "id": 60,
+            "brandCode": "60",
+            "brandName": "LEEMAN"
+        },
+        {
+            "id": 61,
+            "brandCode": "61",
+            "brandName": "\u0e44\u0e2d\u0e0a\u0e34"
+        },
+        {
+            "id": 62,
+            "brandCode": "62",
+            "brandName": "\u0e41\u0e21\u0e19\u0e22\u0e39 (MANU)"
+        },
+        {
+            "id": 63,
+            "brandCode": "63",
+            "brandName": "HMEINECKE"
+        },
+        {
+            "id": 64,
+            "brandCode": "64",
+            "brandName": "\u0e42\u0e0b\u0e27 (SOL)"
+        },
+        {
+            "id": 65,
+            "brandCode": "65",
+            "brandName": "\u0e40\u0e2e\u0e49\u0e32\u0e17\u0e4c (HOUSE)"
+        },
+        {
+            "id": 66,
+            "brandCode": "66",
+            "brandName": "SANWA"
+        },
+        {
+            "id": 67,
+            "brandCode": "67",
+            "brandName": "SAHA METER"
+        },
+        {
+            "id": 68,
+            "brandCode": "68",
+            "brandName": "\u0e40\u0e04\u0e49\u0e19\u0e17\u0e4c\u0e2d\u0e35\u0e25\u0e34\u0e04"
+        },
+        {
+            "id": 69,
+            "brandCode": "69",
+            "brandName": "ELSTER"
+        },
+        {
+            "id": 70,
+            "brandCode": "70",
+            "brandName": "NIDEX"
+        },
+        {
+            "id": 71,
+            "brandCode": "71",
+            "brandName": "ABB"
+        },
+        {
+            "id": 72,
+            "brandCode": "72",
+            "brandName": "PRIMAYER"
+        },
+        {
+            "id": 73,
+            "brandCode": "73",
+            "brandName": "ALIA"
+        },
+        {
+            "id": 74,
+            "brandCode": "74",
+            "brandName": "BADGER METER"
+        },
+        {
+            "id": 75,
+            "brandCode": "75",
+            "brandName": "LTH"
+        },
+        {
+            "id": 76,
+            "brandCode": "76",
+            "brandName": "ASAMITOR"
+        },
+        {
+            "id": 77,
+            "brandCode": "77",
+            "brandName": "\u0e17\u0e32\u0e42\u0e22"
+        },
+        {
+            "id": 78,
+            "brandCode": "78",
+            "brandName": "\u0e21\u0e32\u0e42\u0e19"
+        },
+        {
+            "id": 79,
+            "brandCode": "79",
+            "brandName": "\u0e41\u0e23\u0e21\u0e42\u0e1a\u0e49"
+        },
+        {
+            "id": 80,
+            "brandCode": "80",
+            "brandName": "\u0e44\u0e2d\u0e42\u0e01\u0e49"
+        },
+        {
+            "id": 81,
+            "brandCode": "81",
+            "brandName": "NAM"
+        },
+        {
+            "id": 82,
+            "brandCode": "82",
+            "brandName": "TMC"
+        },
+        {
+            "id": 83,
+            "brandCode": "83",
+            "brandName": "\u0e27\u0e2d\u0e04\u0e40\u0e01\u0e2d\u0e23\u0e4c"
+        },
+        {
+            "id": 84,
+            "brandCode": "84",
+            "brandName": "\u0e2d\u0e32\u0e15\u0e32\u0e23\u0e34/\u0e2e\u0e32\u0e15\u0e32\u0e23\u0e34"
+        },
+        {
+            "id": 85,
+            "brandCode": "85",
+            "brandName": "\u0e2d\u0e35\u0e42\u0e01"
+        },
+        {
+            "id": 86,
+            "brandCode": "86",
+            "brandName": "HRON"
+        },
+        {
+            "id": 87,
+            "brandCode": "87",
+            "brandName": "IESA"
+        },
+        {
+            "id": 88,
+            "brandCode": "88",
+            "brandName": "EOT"
+        },
+        {
+            "id": 49,
+            "brandCode": "49",
+            "brandName": "OCTAVE"
+        },
+        {
+            "id": 89,
+            "brandCode": "89",
+            "brandName": "NXP"
+        },
+        {
+            "id": 90,
+            "brandCode": "99",
+            "brandName": "Sensuns"
+        },
+        {
+            "id": 91,
+            "brandCode": "90",
+            "brandName": "SPP"
+        },
+        {
+            "id": 99,
+            "brandCode": "98",
+            "brandName": "MTP"
+        },
+        {
+            "id": 93,
+            "brandCode": "92",
+            "brandName": "EuRO"
+        },
+        {
+            "id": 94,
+            "brandCode": "93",
+            "brandName": "MBA"
+        },
+        {
+            "id": 95,
+            "brandCode": "94",
+            "brandName": "TDA"
+        },
+        {
+            "id": 96,
+            "brandCode": "95",
+            "brandName": "PWA"
+        },
+        {
+            "id": 98,
+            "brandCode": "97",
+            "brandName": "Rubin Sonic"
+        },
+        {
+            "id": 92,
+            "brandCode": "91",
+            "brandName": "TAC"
+        },
+        {
+            "id": 97,
+            "brandCode": "96",
+            "brandName": "INTEGRA"
+        },
+        {
+            "id": 100,
+            "brandCode": "98",
+            "brandName": "Honeywell"
+        },
+        {
+            "id": 101,
+            "brandCode": "87",
+            "brandName": "DIEHL"
+        },
+        {
+            "id": 102,
+            "brandCode": "99",
+            "brandName": "HUIZHONG"
+        },
+        {
+            "id": 103,
+            "brandCode": "86",
+            "brandName": "ZENNER"
+        }
+    ],
+    "numberMatch": 104,
+    "numberReturn": 104
+}

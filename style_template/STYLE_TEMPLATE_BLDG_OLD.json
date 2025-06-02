@@ -1,0 +1,218 @@
+{
+    "version": 8,
+    "name": "Vallaris Default",
+    "sources": {
+        "6617a62b6498e3e59b81f949": {
+            "id": "6617a62b6498e3e59b81f949",
+            "title": "TILE_B5511011_BLDG",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/6617a62b6498e3e59b81f949?api_key=EBATVwdYwLXWAnrOf04lpQa8MYGIQIlLCIrkDgIoUsw3XIPgNOmWomLFW9u9Vub9"
+        },
+        "osm": {
+            "id": "osm",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/public/osm"
+        }
+    },
+    "sprite": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/sprite/65792edcd715b5ab12310280/sprites",
+    "glyphs": "https://gisdb.pwa.co.th/core/tiles/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "filter": [
+                "any",
+                [
+                    "!in",
+                    "useTypeId",
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39
+                ],
+                [
+                    "!in",
+                    "useStatusId",
+                    1,
+                    4,
+                    5
+                ]
+            ],
+            "id": "B5511011_BLDG_type4",
+            "layout": {
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 16,
+            "paint": {
+                "fill-color": "rgba(255, 255, 255, 1)",
+                "fill-opacity": 1,
+                "fill-outline-color": "rgba(0, 0, 0, 1)"
+            },
+            "source": "6617a62b6498e3e59b81f949",
+            "source-layer": "6617a62b6498e3e59b81f949",
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "any",
+                [
+                    "in",
+                    "useTypeId",
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39
+                ]
+            ],
+            "id": "B5511011_BLDG_type3",
+            "layout": {
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 16,
+            "paint": {
+                "fill-color": "rgba(135, 198, 250, 1)",
+                "fill-opacity": 1,
+                "fill-outline-color": "rgba(129,129,129,1)"
+            },
+            "source": "6617a62b6498e3e59b81f949",
+            "source-layer": "6617a62b6498e3e59b81f949",
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "any",
+                [
+                    "in",
+                    "useTypeId",
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29
+                ]
+            ],
+            "id": "B5511011_BLDG_type2",
+            "layout": {
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 16,
+            "paint": {
+                "fill-color": "rgba(237, 185, 218, 1)",
+                "fill-opacity": 1,
+                "fill-outline-color": "rgba(129,129,129,1)"
+            },
+            "source": "6617a62b6498e3e59b81f949",
+            "source-layer": "6617a62b6498e3e59b81f949",
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "any",
+                [
+                    "in",
+                    "useTypeId",
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                ]
+            ],
+            "id": "B5511011_BLDG_type1",
+            "layout": {
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 16,
+            "paint": {
+                "fill-color": "rgba(244, 252, 149, 1)",
+                "fill-opacity": 1,
+                "fill-outline-color": "rgba(129,129,129,1)"
+            },
+            "source": "6617a62b6498e3e59b81f949",
+            "source-layer": "6617a62b6498e3e59b81f949",
+            "type": "fill"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "!=",
+                    "addressNo",
+                    "N/A"
+                ]
+            ],
+            "id": "B5511011_BLDG_Label",
+            "layout": {
+                "symbol-avoid-edges": false,
+                "symbol-placement": "point",
+                "text-allow-overlap": false,
+                "text-field": "{building} \n{addressNo} ",
+                "text-font": [
+                    "Kanit"
+                ],
+                "text-ignore-placement": true,
+                "text-size": 13,
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "bldg"
+            },
+            "minzoom": 18,
+            "paint": {
+                "text-color": "rgba(64, 64, 64, 1)",
+                "text-halo-color": "rgba(255, 255, 255, 1)",
+                "text-halo-width": 1
+            },
+            "source": "6617a62b6498e3e59b81f949",
+            "source-layer": "6617a62b6498e3e59b81f949",
+            "type": "symbol"
+        }
+    ],
+    "bearing": 23,
+    "center": [
+        98.895383,
+        18.62388
+    ],
+    "metadata": {
+        "vallaris:groups": {}
+    },
+    "pitch": 3,
+    "zoom": 20
+}

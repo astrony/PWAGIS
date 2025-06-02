@@ -1,0 +1,72 @@
+{
+    "version": 8,
+    "name": "Vallaris Blank",
+    "sources": {
+        "66973add947ea1a51b723c95": {
+            "id": "66973add947ea1a51b723c95",
+            "title": "TILE_B5521012_STEP_TEST",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/66973add947ea1a51b723c95?api_key=EBATVwdYwLXWAnrOf04lpQa8MYGIQIlLCIrkDgIoUsw3XIPgNOmWomLFW9u9Vub9"
+        }
+    },
+    "sprite": "https://gisdb.pwa.co.th/core/tiles/sprite/sprites",
+    "glyphs": "https://gisdb.pwa.co.th/core/tiles/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "background",
+            "metadata": {
+                "vallaris:group": "Basemap"
+            },
+            "paint": {
+                "background-color": "rgba(0, 0, 0, 0)"
+            },
+            "type": "background"
+        },
+        {
+            "id": "Step ",
+            "maxzoom": 22,
+            "minzoom": 8,
+            "paint": {
+                "fill-color": "rgba(210, 210, 210, 1)",
+                "fill-opacity": 0.5,
+                "fill-outline-color": "rgba(97, 97, 97, 1)"
+            },
+            "source": "66973add947ea1a51b723c95",
+            "source-layer": "66973add947ea1a51b723c95",
+            "type": "fill"
+        },
+        {
+            "id": "Step-label",
+            "layout": {
+                "text-field": "{stepNo}",
+                "text-font": [
+                    "Kanit"
+                ]
+            },
+            "maxzoom": 11,
+            "minzoom": 9,
+            "paint": {
+                "text-color": "rgba(99, 99, 99, 1)"
+            },
+            "source": "66973add947ea1a51b723c95",
+            "source-layer": "66973add947ea1a51b723c95",
+            "type": "symbol"
+        }
+    ],
+    "bearing": 0,
+    "center": [
+        102.767854,
+        16.078177
+    ],
+    "metadata": {
+        "vallaris:groups": {
+            "Basemap": {
+                "collapsed": true,
+                "color": "rgba(63,116,202,1)",
+                "name": "Basemap"
+            }
+        }
+    },
+    "pitch": 0,
+    "zoom": 11
+}

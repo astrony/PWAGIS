@@ -1,0 +1,61 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "sizeCode": "01",
+            "sizeName": "1/2"
+        },
+        {
+            "id": 2,
+            "sizeCode": "02",
+            "sizeName": "3/4"
+        },
+        {
+            "id": 3,
+            "sizeCode": "03",
+            "sizeName": "1"
+        },
+        {
+            "id": 4,
+            "sizeCode": "04",
+            "sizeName": "1 1/2"
+        },
+        {
+            "id": 5,
+            "sizeCode": "05",
+            "sizeName": "2"
+        },
+        {
+            "id": 6,
+            "sizeCode": "06",
+            "sizeName": "2 1/2"
+        },
+        {
+            "id": 7,
+            "sizeCode": "07",
+            "sizeName": "3"
+        },
+        {
+            "id": 8,
+            "sizeCode": "08",
+            "sizeName": "4"
+        },
+        {
+            "id": 9,
+            "sizeCode": "09",
+            "sizeName": "6"
+        },
+        {
+            "id": 10,
+            "sizeCode": "10",
+            "sizeName": "\u0e15\u0e31\u0e49\u0e07\u0e41\u0e15\u0e48 8 \u0e19\u0e34\u0e49\u0e27\u0e02\u0e36\u0e49\u0e19\u0e44\u0e1b"
+        },
+        {
+            "id": 0,
+            "sizeCode": "00",
+            "sizeName": "\u0e44\u0e21\u0e48\u0e23\u0e30\u0e1a\u0e38"
+        }
+    ],
+    "numberMatch": 11,
+    "numberReturn": 11
+}

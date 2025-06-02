@@ -1,0 +1,91 @@
+{
+    "version": 8,
+    "name": "Vallaris Default",
+    "sources": {
+        "6617a6406498e3e59b81f94a": {
+            "id": "6617a6406498e3e59b81f94a",
+            "title": "TILE_B5511011_METER",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/6617a6406498e3e59b81f94a?api_key=EBATVwdYwLXWAnrOf04lpQa8MYGIQIlLCIrkDgIoUsw3XIPgNOmWomLFW9u9Vub9"
+        }
+    },
+    "sprite": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/sprite/65792edcd715b5ab12310280/sprites",
+    "glyphs": "https://gisdb.pwa.co.th/core/tiles/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "meter",
+            "layout": {
+                "icon-allow-overlap": true,
+                "icon-image": "Meter",
+                "icon-size": 0.45,
+                "text-font": [
+                    "Kanit"
+                ],
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "minzoom": 17,
+            "source": "6617a6406498e3e59b81f94a",
+            "source-layer": "6617a6406498e3e59b81f94a",
+            "type": "symbol"
+        },
+        {
+            "id": "METERLabel",
+            "layout": {
+                "text-allow-overlap": true,
+                "text-anchor": "left",
+                "text-field": "{meterNo}",
+                "text-font": [
+                    "Kanit"
+                ],
+                "text-ignore-placement": [
+                    "step",
+                    [
+                        "zoom"
+                    ],
+                    false,
+                    9,
+                    false,
+                    13,
+                    false,
+                    17,
+                    true,
+                    22,
+                    true
+                ],
+                "text-offset": [
+                    0,
+                    1
+                ],
+                "text-rotate": 10,
+                "text-size": 13,
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 19.5,
+            "paint": {
+                "text-color": "rgba(64, 64, 64, 1)",
+                "text-halo-color": "rgba(255, 255, 255, 1)",
+                "text-halo-width": 1,
+                "text-translate": [
+                    0,
+                    5
+                ]
+            },
+            "source": "6617a6406498e3e59b81f94a",
+            "source-layer": "6617a6406498e3e59b81f94a",
+            "type": "symbol"
+        }
+    ],
+    "bearing": 0,
+    "center": [
+        98.941993,
+        18.739835
+    ],
+    "metadata": {
+        "vallaris:groups": {}
+    },
+    "pitch": 0,
+    "zoom": 20
+}

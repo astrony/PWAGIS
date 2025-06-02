@@ -1,0 +1,75 @@
+{
+    "version": 8,
+    "name": "Vallaris Default",
+    "sources": {
+        "6617a7e76498e3e59b81f94e": {
+            "id": "6617a7e76498e3e59b81f94e",
+            "title": "TILE_B5511011_LEAKPOINT",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/6617a7e76498e3e59b81f94e?api_key=EBATVwdYwLXWAnrOf04lpQa8MYGIQIlLCIrkDgIoUsw3XIPgNOmWomLFW9u9Vub9"
+        }
+    },
+    "sprite": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/sprite/65792edcd715b5ab12310280/sprites",
+    "glyphs": "https://gisdb.pwa.co.th/core/tiles/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "B5511011_LEAKPOINT",
+            "layout": {
+                "icon-allow-overlap": true,
+                "icon-ignore-placement": false,
+                "icon-image": "leakpoint32",
+                "icon-rotate": 0,
+                "icon-size": 0.7,
+                "text-font": []
+            },
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 18,
+            "source": "6617a7e76498e3e59b81f94e",
+            "source-layer": "6617a7e76498e3e59b81f94e",
+            "type": "symbol"
+        },
+        {
+            "id": "B5511011_LEAKPOINT-Label",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-ignore-placement": false,
+                "icon-rotate": 0,
+                "icon-size": 0.7,
+                "text-anchor": "top",
+                "text-field": "{cause}",
+                "text-font": [
+                    "Kanit"
+                ],
+                "text-ignore-placement": true,
+                "text-size": 12
+            },
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 20,
+            "paint": {
+                "icon-color": "rgba(33, 31, 31, 1)",
+                "text-color": "rgba(64, 64, 64, 1)",
+                "text-halo-color": "rgba(255, 255, 255, 1)",
+                "text-halo-width": 1,
+                "text-translate": [
+                    0,
+                    13
+                ]
+            },
+            "source": "6617a7e76498e3e59b81f94e",
+            "source-layer": "6617a7e76498e3e59b81f94e",
+            "type": "symbol"
+        }
+    ],
+    "bearing": 0,
+    "center": [
+        98.981699,
+        18.793152
+    ],
+    "metadata": {
+        "vallaris:groups": {}
+    },
+    "pitch": 0,
+    "zoom": 20
+}

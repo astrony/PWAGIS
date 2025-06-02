@@ -1,0 +1,49 @@
+{
+    "version": 8,
+    "name": "Vallaris Default",
+    "sources": {
+        "663dd628dd708e21f678aacd": {
+            "id": "663dd628dd708e21f678aacd",
+            "title": "TILE_B5511011_PIPE_SERV",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/663dd628dd708e21f678aacd?api_key=EBATVwdYwLXWAnrOf04lpQa8MYGIQIlLCIrkDgIoUsw3XIPgNOmWomLFW9u9Vub9"
+        }
+    },
+    "sprite": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/sprite/65792edcd715b5ab12310280/sprites",
+    "glyphs": "https://gisdb.pwa.co.th/core/tiles/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "B5511012_PIPE_SERV",
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 17,
+            "paint": {
+                "line-color": "rgba(109, 109, 109, 1)",
+                "line-dasharray": [
+                    2,
+                    2
+                ],
+                "line-width": 1
+            },
+            "source": "663dd628dd708e21f678aacd",
+            "source-layer": "663dd628dd708e21f678aacd",
+            "type": "line"
+        }
+    ],
+    "bearing": 0,
+    "center": [
+        98.985781,
+        18.782429
+    ],
+    "metadata": {
+        "vallaris:groups": {
+            "osm:basemap": {
+                "collapsed": true,
+                "color": "rgba(63,116,202,1)",
+                "name": "osm:basemap"
+            }
+        }
+    },
+    "pitch": 0,
+    "zoom": 17
+}

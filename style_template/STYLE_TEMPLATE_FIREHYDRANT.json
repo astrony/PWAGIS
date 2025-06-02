@@ -1,0 +1,110 @@
+{
+    "version": 8,
+    "name": "Vallaris Default",
+    "sources": {
+        "6617a7fc6498e3e59b81f94f": {
+            "id": "6617a7fc6498e3e59b81f94f",
+            "title": "TILE_B5511011_FIREHYDRANT",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/6617a7fc6498e3e59b81f94f?api_key=EBATVwdYwLXWAnrOf04lpQa8MYGIQIlLCIrkDgIoUsw3XIPgNOmWomLFW9u9Vub9"
+        }
+    },
+    "sprite": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/sprite/65792edcd715b5ab12310280/sprites",
+    "glyphs": "https://gisdb.pwa.co.th/core/tiles/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "sizeId",
+                    75
+                ]
+            ],
+            "id": "B5511011_FIREHYDRANT-size75",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Firehydrant75",
+                "icon-size": 0.6,
+                "text-font": [
+                    "Kanit"
+                ],
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 15,
+            "source": "6617a7fc6498e3e59b81f94f",
+            "source-layer": "6617a7fc6498e3e59b81f94f",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "sizeId",
+                    100
+                ]
+            ],
+            "id": "B5511011_FIREHYDRANT-size100",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Firehydrant100",
+                "icon-size": 0.6,
+                "text-font": [
+                    "Kanit"
+                ],
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 15,
+            "source": "6617a7fc6498e3e59b81f94f",
+            "source-layer": "6617a7fc6498e3e59b81f94f",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "sizeId",
+                    150
+                ]
+            ],
+            "id": "B5511011_FIREHYDRANT-size150",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Firehydrant150",
+                "icon-size": 0.6,
+                "text-font": [
+                    "Kanit"
+                ],
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {},
+            "minzoom": 15,
+            "source": "6617a7fc6498e3e59b81f94f",
+            "source-layer": "6617a7fc6498e3e59b81f94f",
+            "type": "symbol"
+        }
+    ],
+    "bearing": 0,
+    "center": [
+        98.956877,
+        18.727713
+    ],
+    "metadata": {
+        "vallaris:groups": {
+            "osm:basemap": {
+                "collapsed": true,
+                "color": "rgba(63,116,202,1)",
+                "name": "osm:basemap"
+            }
+        }
+    },
+    "pitch": 0,
+    "zoom": 15
+}

@@ -1,0 +1,48 @@
+{
+    "version": 8,
+    "name": "Vallaris Default",
+    "sources": {
+        "663ad8f06498e3e59b81f96c": {
+            "id": "663ad8f06498e3e59b81f96c",
+            "title": "TILE_B5511011_STRUCT",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/663ad8f06498e3e59b81f96c?api_key=EBATVwdYwLXWAnrOf04lpQa8MYGIQIlLCIrkDgIoUsw3XIPgNOmWomLFW9u9Vub9"
+        }
+    },
+    "sprite": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/sprite/65792edcd715b5ab12310280/sprites",
+    "glyphs": "https://gisdb.pwa.co.th/core/tiles/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "B5511011_STRUCT",
+            "maxzoom": 22,
+            "minzoom": 17,
+            "paint": {
+                "line-color": "rgba(127, 127, 127, 1)",
+                "line-dasharray": [
+                    6,
+                    10
+                ],
+                "line-width": 1
+            },
+            "source": "663ad8f06498e3e59b81f96c",
+            "source-layer": "663ad8f06498e3e59b81f96c",
+            "type": "line"
+        }
+    ],
+    "bearing": 0,
+    "center": [
+        98.992227,
+        18.781458
+    ],
+    "metadata": {
+        "vallaris:groups": {
+            "osm:basemap": {
+                "collapsed": true,
+                "color": "rgba(63,116,202,1)",
+                "name": "osm:basemap"
+            }
+        }
+    },
+    "pitch": 0,
+    "zoom": 18
+}

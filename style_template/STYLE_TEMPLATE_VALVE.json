@@ -1,0 +1,319 @@
+{
+    "version": 8,
+    "name": "Vallaris Default",
+    "sources": {
+        "6617a6656498e3e59b81f94c": {
+            "id": "6617a6656498e3e59b81f94c",
+            "title": "TILE_B5511011_VALVE",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/6617a6656498e3e59b81f94c?api_key=EBATVwdYwLXWAnrOf04lpQa8MYGIQIlLCIrkDgIoUsw3XIPgNOmWomLFW9u9Vub9"
+        }
+    },
+    "sprite": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/sprite/65792edcd715b5ab12310280/sprites",
+    "glyphs": "https://gisdb.pwa.co.th/core/tiles/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "typeId",
+                    1
+                ]
+            ],
+            "id": "B5511012_VALVE_type1",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Valve5",
+                "icon-size": 0.5,
+                "text-font": [
+                    "Kanit"
+                ],
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "valve"
+            },
+            "minzoom": 15,
+            "source": "6617a6656498e3e59b81f94c",
+            "source-layer": "6617a6656498e3e59b81f94c",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "typeId",
+                    2
+                ]
+            ],
+            "id": "B5511012_VALVE_type2",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Valve1",
+                "icon-size": 0.6,
+                "text-font": [
+                    "Kanit"
+                ],
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "valve"
+            },
+            "minzoom": 15,
+            "source": "6617a6656498e3e59b81f94c",
+            "source-layer": "6617a6656498e3e59b81f94c",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "typeId",
+                    3
+                ]
+            ],
+            "id": "B5511012_VALVE_type3",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Valve4",
+                "icon-size": 0.5,
+                "text-font": [
+                    "Kanit"
+                ],
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "valve"
+            },
+            "minzoom": 15,
+            "source": "6617a6656498e3e59b81f94c",
+            "source-layer": "6617a6656498e3e59b81f94c",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "typeId",
+                    4
+                ]
+            ],
+            "id": "B5511012_VALVE_type4",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Valve2",
+                "icon-size": 0.5,
+                "text-font": [
+                    "Kanit"
+                ],
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "valve"
+            },
+            "minzoom": 15,
+            "source": "6617a6656498e3e59b81f94c",
+            "source-layer": "6617a6656498e3e59b81f94c",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "typeId",
+                    5
+                ]
+            ],
+            "id": "B5511012_VALVE_type5",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Check Valve",
+                "icon-size": 0.5,
+                "text-font": [
+                    "Kanit"
+                ],
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "valve"
+            },
+            "minzoom": 15,
+            "source": "6617a6656498e3e59b81f94c",
+            "source-layer": "6617a6656498e3e59b81f94c",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "typeId",
+                    6
+                ]
+            ],
+            "id": "B5511012_VALVE_type6",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Airvalve",
+                "icon-size": 0.65,
+                "text-font": [
+                    "Kanit"
+                ],
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "valve"
+            },
+            "minzoom": 15,
+            "source": "6617a6656498e3e59b81f94c",
+            "source-layer": "6617a6656498e3e59b81f94c",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "typeId",
+                    7
+                ]
+            ],
+            "id": "B5511012_VALVE_type7",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "prv",
+                "icon-size": 0.7,
+                "text-font": [
+                    "Kanit"
+                ]
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "valve"
+            },
+            "minzoom": 15,
+            "source": "6617a6656498e3e59b81f94c",
+            "source-layer": "6617a6656498e3e59b81f94c",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "typeId",
+                    8
+                ]
+            ],
+            "id": "B5511012_VALVE_type8",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Blowoff",
+                "icon-size": 0.6,
+                "text-font": [
+                    "Kanit"
+                ]
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "valve"
+            },
+            "minzoom": 15,
+            "source": "6617a6656498e3e59b81f94c",
+            "source-layer": "6617a6656498e3e59b81f94c",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "typeId",
+                    9
+                ]
+            ],
+            "id": "B5511012_VALVE_type9",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Valve99",
+                "icon-size": 0.6,
+                "text-font": [
+                    "Kanit"
+                ]
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "valve"
+            },
+            "minzoom": 15,
+            "source": "6617a6656498e3e59b81f94c",
+            "source-layer": "6617a6656498e3e59b81f94c",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "typeId",
+                    10
+                ]
+            ],
+            "id": "B5511012_VALVE_type10",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "Valve3",
+                "icon-size": 0.6,
+                "text-font": [
+                    "Kanit"
+                ]
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "valve"
+            },
+            "minzoom": 15,
+            "source": "6617a6656498e3e59b81f94c",
+            "source-layer": "6617a6656498e3e59b81f94c",
+            "type": "symbol"
+        }
+    ],
+    "bearing": 0,
+    "center": [
+        99.039797,
+        18.757322
+    ],
+    "metadata": {
+        "vallaris:groups": {
+            "osm:basemap": {
+                "collapsed": true,
+                "color": "rgba(63,116,202,1)",
+                "name": "osm:basemap"
+            },
+            "valve": {
+                "collapsed": true,
+                "color": "#b4f170",
+                "metadata": {
+                    "added": "true",
+                    "description": "ประตูน้ำ (Valve) เป็นส่วนประกอบสำคัญของระบบประปาที่ควบคุมการไหลของน้ำ วาล์วน้ำมีหลายประเภท ซึ่งแต่ละประเภทก็จะมีหน้าที่และการใช้งานที่แตกต่างกันไป",
+                    "icon": "Valve1",
+                    "title": "valve"
+                },
+                "name": "valve"
+            }
+        }
+    },
+    "pitch": 0,
+    "zoom": 18
+}

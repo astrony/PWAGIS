@@ -1,0 +1,166 @@
+{
+    "version": 8,
+    "name": "Vallaris Blank",
+    "sources": {
+        "66837799947ea1a51b72392f": {
+            "id": "66837799947ea1a51b72392f",
+            "title": "TILE_B5511011_FLOW_METER",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/66837799947ea1a51b72392f?api_key=EBATVwdYwLXWAnrOf04lpQa8MYGIQIlLCIrkDgIoUsw3XIPgNOmWomLFW9u9Vub9"
+        }
+    },
+    "sprite": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/sprite/65792edcd715b5ab12310280/sprites",
+    "glyphs": "https://gisdb.pwa.co.th/core/tiles/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "flowMeterType",
+                    1
+                ]
+            ],
+            "id": "Flow_meter_Type1",
+            "layout": {
+                "icon-allow-overlap": true,
+                "icon-image": "master-meter",
+                "icon-size": 0.5,
+                "text-font": [
+                    "Kanit"
+                ]
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "title": "มาตรวัดน้ําหลัก",
+                "vallaris:group": "flow_meter"
+            },
+            "minzoom": 14,
+            "source": "66837799947ea1a51b72392f",
+            "source-layer": "66837799947ea1a51b72392f",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "flowMeterType",
+                    2
+                ]
+            ],
+            "id": "Flow_meter_Type2",
+            "layout": {
+                "icon-allow-overlap": true,
+                "icon-image": "dma-water",
+                "icon-size": 0.5,
+                "text-font": [
+                    "Kanit"
+                ]
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "title": "มาตรวัดน้ํา DMA",
+                "vallaris:group": "flow_meter"
+            },
+            "minzoom": 14,
+            "source": "66837799947ea1a51b72392f",
+            "source-layer": "66837799947ea1a51b72392f",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "flowMeterType",
+                    3
+                ]
+            ],
+            "id": "Flow_meter_Type3",
+            "layout": {
+                "icon-allow-overlap": true,
+                "icon-image": "raw-water-meter",
+                "icon-size": 0.5,
+                "text-font": [
+                    "Kanit"
+                ]
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "title": "มาตรวัดน้ําดิบ",
+                "vallaris:group": "flow_meter"
+            },
+            "minzoom": 14,
+            "source": "66837799947ea1a51b72392f",
+            "source-layer": "66837799947ea1a51b72392f",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "flowMeterType",
+                    4
+                ]
+            ],
+            "id": "Flow_meter_Type4",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "master-send-receive2",
+                "icon-size": 0.5,
+                "text-font": [
+                    "Kanit"
+                ]
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "title": "มาตรวัดน้ําระหว่างสถานี",
+                "vallaris:group": "flow_meter"
+            },
+            "minzoom": 14,
+            "source": "66837799947ea1a51b72392f",
+            "source-layer": "66837799947ea1a51b72392f",
+            "type": "symbol"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "flowMeterType",
+                    5
+                ]
+            ],
+            "id": "Flow_meter_Type5",
+            "layout": {
+                "icon-allow-overlap": false,
+                "icon-image": "other-meter",
+                "icon-size": 0.5,
+                "text-font": [
+                    "Kanit"
+                ]
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "title": "อื่นๆ",
+                "vallaris:group": "flow_meter"
+            },
+            "minzoom": 14,
+            "source": "66837799947ea1a51b72392f",
+            "source-layer": "66837799947ea1a51b72392f",
+            "type": "symbol"
+        }
+    ],
+    "bearing": 0,
+    "center": [
+        99.00215,
+        18.796009
+    ],
+    "metadata": {
+        "vallaris:groups": {}
+    },
+    "pitch": 0,
+    "zoom": 16
+}

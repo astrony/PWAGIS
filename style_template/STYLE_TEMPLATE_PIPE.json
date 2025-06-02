@@ -1,0 +1,580 @@
+{
+    "version": 8,
+    "name": "Vallaris Default",
+    "sources": {
+        "6617a67e6498e3e59b81f94d": {
+            "id": "6617a67e6498e3e59b81f94d",
+            "title": "TILE_B5511011_PIPE",
+            "type": "vector",
+            "url": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/tiles/6617a67e6498e3e59b81f94d?api_key=EBATVwdYwLXWAnrOf04lpQa8MYGIQIlLCIrkDgIoUsw3XIPgNOmWomLFW9u9Vub9"
+        }
+    },
+    "sprite": "https://gisdb.pwa.co.th/core/api/tiles/1.0-beta/sprite/65792edcd715b5ab12310280/sprites",
+    "glyphs": "https://gisdb.pwa.co.th/core/tiles/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "filter": [
+                "all",
+                [
+                    "<=",
+                    "sizeId",
+                    40
+                ]
+            ],
+            "id": "PIPE_SIZE_16-40",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 17,
+            "paint": {
+                "line-color": "rgba(255,170,255,1)",
+                "line-translate-anchor": "map",
+                "line-width": 1.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    ">=",
+                    "sizeId",
+                    50
+                ],
+                [
+                    "<=",
+                    "sizeId",
+                    90
+                ]
+            ],
+            "id": "PIPE_SIZE_50-90",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 17,
+            "paint": {
+                "line-color": "rgba(204,0,102,1)",
+                "line-translate-anchor": "map",
+                "line-width": 1.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    ">=",
+                    "sizeId",
+                    100
+                ],
+                [
+                    "<=",
+                    "sizeId",
+                    140
+                ]
+            ],
+            "id": "PIPE_SIZE_100-125-140",
+            "layout": {
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 16,
+            "paint": {
+                "line-color": "rgba(255,255,0,1)",
+                "line-translate-anchor": "map",
+                "line-width": 1.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    150,
+                    160,
+                    175,
+                    180
+                ]
+            ],
+            "id": "PIPE_SIZE_150-160-175-180",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 16,
+            "paint": {
+                "line-color": "rgba(51,153,0,1)",
+                "line-translate-anchor": "map",
+                "line-width": 1.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    200,
+                    225
+                ]
+            ],
+            "id": "PIPE_SIZE_200-225",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 16,
+            "paint": {
+                "line-color": "rgba(51,0,204,1)",
+                "line-translate-anchor": "map",
+                "line-width": 2
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    250,
+                    280
+                ]
+            ],
+            "id": "PIPE_SIZE_250-280",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 16,
+            "paint": {
+                "line-color": "rgba(255,0,0,1)",
+                "line-translate-anchor": "map",
+                "line-width": 2
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    300,
+                    315
+                ]
+            ],
+            "id": "PIPE_SIZE_300-315",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 15,
+            "paint": {
+                "line-blur": 2,
+                "line-color": "rgba(153,51,0,1)",
+                "line-translate-anchor": "map",
+                "line-width": 3.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    350,
+                    355
+                ]
+            ],
+            "id": "PIPE_SIZE_335-350",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 16,
+            "paint": {
+                "line-color": "rgba(217,137,229,1)",
+                "line-translate-anchor": "map",
+                "line-width": 2
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    400
+                ]
+            ],
+            "id": "PIPE_SIZE_400",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 15,
+            "paint": {
+                "line-color": "rgba(51,255,255,1)",
+                "line-translate-anchor": "map",
+                "line-width": 2
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    450
+                ]
+            ],
+            "id": "PIPE_SIZE_450",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 15,
+            "paint": {
+                "line-color": "rgba(119,119,119,1)",
+                "line-translate-anchor": "map",
+                "line-width": 2
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    500,
+                    550,
+                    560
+                ]
+            ],
+            "id": "PIPE_SIZE_500-550-560",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 15,
+            "paint": {
+                "line-color": "rgba(255,51,255,1)",
+                "line-translate-anchor": "map",
+                "line-width": 2.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    600,
+                    630,
+                    650
+                ]
+            ],
+            "id": "PIPE_SIZE_600-630-650",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 14,
+            "paint": {
+                "line-color": "rgba(153,153,0,1)",
+                "line-translate-anchor": "map",
+                "line-width": 2.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    700,
+                    710,
+                    750
+                ]
+            ],
+            "id": "PIPE_SIZE_700-710-750",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 14,
+            "paint": {
+                "line-color": "rgba(51,153,153,1)",
+                "line-translate-anchor": "map",
+                "line-width": 2.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    800,
+                    850
+                ]
+            ],
+            "id": "PIPE_SIZE_800-850",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 13,
+            "paint": {
+                "line-color": "rgba(102,102,204,1)",
+                "line-translate-anchor": "map",
+                "line-width": 2.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    900,
+                    950
+                ]
+            ],
+            "id": "PIPE_SIZE_900-950",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 12.5,
+            "paint": {
+                "line-color": "rgba(153,0,153,1)",
+                "line-translate-anchor": "map",
+                "line-width": 3.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "in",
+                    "sizeId",
+                    1000
+                ]
+            ],
+            "id": "PIPE_SIZE_1000",
+            "layout": {
+                "line-cap": "round",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 10,
+            "paint": {
+                "line-color": "rgba(0,255,9,1)",
+                "line-translate-anchor": "map",
+                "line-width": 3.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    ">",
+                    "sizeId",
+                    1000
+                ]
+            ],
+            "id": "PIPE_SIZE_more-1000",
+            "layout": {
+                "line-cap": "butt",
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 10,
+            "paint": {
+                "line-color": "rgba(246,87,17,1)",
+                "line-translate-anchor": "map",
+                "line-width": 3.5
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "line"
+        },
+        {
+            "id": "PIPE_label",
+            "layout": {
+                "symbol-placement": "line",
+                "text-anchor": "bottom",
+                "text-field": "ท่อ {typeId} ขนาด {sizeId} มม.",
+                "text-font": [
+                    "Kanit"
+                ],
+                "text-size": 10
+            },
+            "maxzoom": 22,
+            "metadata": {
+                "vallaris:group": "pipe"
+            },
+            "minzoom": 18,
+            "paint": {
+                "text-halo-color": "rgba(255, 255, 255, 1)",
+                "text-halo-width": 1,
+                "text-translate-anchor": "viewport"
+            },
+            "source": "6617a67e6498e3e59b81f94d",
+            "source-layer": "6617a67e6498e3e59b81f94d",
+            "type": "symbol"
+        }
+    ],
+    "bearing": 0,
+    "center": [
+        99.06107,
+        18.917236
+    ],
+    "metadata": {
+        "vallaris:groups": {
+            "pipe": {
+                "collapsed": true,
+                "color": "#5c037a",
+                "metadata": {
+                    "description": "ท่อประปา ระบบประปา หรือระบบท่อน้ำเป็นท่อสำหรับลำเลียงน้ำการประปาเพื่อใช้อุปโภค บริโภค ทั้งในและนอกอาคาร ท่อประปามีหลายชนิดทำจากวัสดุที่แตกต่างกัน อาทิเช่น ท่อประปา PVC, ท่อประปา PPR, ท่อประปาเหล็ก, ท่อประปาไซเลอร์ เป็นต้น",
+                    "title": "pipe",
+                    "type": "line"
+                },
+                "name": "pipe"
+            }
+        }
+    },
+    "pitch": 0,
+    "zoom": 10
+}

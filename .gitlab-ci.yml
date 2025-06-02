@@ -1,0 +1,65 @@
+variables:
+  PROJECT_NAME: "${CI_PROJECT_NAME}"
+  BRANCH: "${CI_COMMIT_REF_NAME}"
+  COMMIT_ID: "${CI_COMMIT_SHA}"
+  REGISTRY_NAME: "${CI_REGISTRY_IMAGE}"
+  REGISTRY_USER: "${CI_REGISTRY_USER}"
+  REGISTRY_PASSWORD: "${CI_REGISTRY_PASSWORD}"
+
+before_script:
+  - echo "$PROJECT_NAME $BRANCH $COMMIT_ID $REGISTRY_NAME $REGISTRY_USER $REGISTRY_PASSWORD"
+  - export git_Build_id=$(echo $COMMIT_ID | cut -c1-8)
+  - export build_time=$(date +"%Y-%m-%dT%H:%M:%SZ")
+  - export build_released=$(date +"%Y-%m-%d")
+
+
+stages:
+  - prepare
+  - sonarqube-check
+  - QA
+  - build
+  - deploy
+  - trigger
+
+build_source_code:
+  stage: build
+  script:
+    - rm build.json
+    - echo "{\"build\":\"$git_Build_id\",\"date\":\"$build_time\",\"release\":\"$BRANCH\"}" >> ${PWD}/build.json
+    - cat ${PWD}/build.json
+    - mkdir pwagis
+    - shopt -s extglob
+    - mv !(pwagis) pwagis
+  artifacts:
+    paths:
+      - pwagis
+
+build_source_code_tag:
+  stage: build
+  only:
+    - tags
+  except:
+    - branches
+  script:
+    - rm build.json
+    - echo "{\"build\":\"$git_Build_id\",\"date\":\"$build_time\",\"release\":\"$BRANCH\"}" >> ${PWD}/build.json
+    - cat ${PWD}/build.json
+    - mkdir pwagis
+    - shopt -s extglob
+    - mv !(pwagis) pwagis
+    - |
+      curl -L 'https://gisapp.pwa.co.th/api/1.0/desktop-versions' \
+      -H 'API-Key: Sds1VK5CKktd1wyYUr3axmGieEzQfr1tfV7tPfTXHIgOaKGp3CmujTVCDsSYkvan' \
+      -H 'Content-Type: application/json' \
+      -d '{
+          "version":"$BRANCH",
+          "details":"$CI_COMMIT_TAG_RELEASE_NOTES",
+          "releaseDate": "$build_released",
+          "downloadUrl":"download url",
+          "build": "$git_Build_id",
+          "release": "$BRANCH",
+          "supported": true
+      }'
+  artifacts:
+    paths:
+      - pwagis

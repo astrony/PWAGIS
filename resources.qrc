@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/plugins/pwagis" >
+        <file>icon.png</file>
+    </qresource>
+     <qresource prefix="/plugins/pwagis" >
+        <file>icon_2.png</file>
+    </qresource>
+    <qresource prefix="/plugins/pwagis" >
+        <file>Search.png</file>
+    </qresource>
+    <qresource prefix="/plugins/pwagis" >
+        <file>Edit.png</file>
+    </qresource>
+    <qresource prefix="/plugins/pwagis" >
+        <file>info.png</file>
+    </qresource>
+    <qresource prefix="/plugins/pwagis" >
+        <file>icon-layer.png</file>
+    </qresource>
+        <qresource prefix="/plugins/pwagis" >
+        <file>Newproject-icon.png</file>
+    </qresource>
+</RCC>
