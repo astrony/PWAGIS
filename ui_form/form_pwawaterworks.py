@@ -67,6 +67,7 @@ def formOpen(dialog, layerid, featureid):
     config = configparser.ConfigParser()
     configpath = os.path.join(plugin_dir, 'config.ini')
     config.read(configpath)
+    current_branch_code = config.get('settings', 'currentbranch')
     token_new = config.get('settings', 'token_new')
 
     """ Load JSON REFERENCE """
@@ -98,64 +99,121 @@ def formOpen(dialog, layerid, featureid):
     if globalId.text() == 'NULL' or globalId.text() == '':
         globalId.setText(str(tempGlobalId))
 
-    load_CostCenter()
+    load_CostCenter(current_branch_code)
     load_PwaStation()
 
     costCenter_text.currentTextChanged.connect(costCenter_change)
     pwaStation_text.currentTextChanged.connect(pwaStation_change)
 
 
-def load_CostCenter():
-    cosCenterList = []
-    costcenters = reference["referances"]["pwawaterwork"]["costcenters"]
-    for i in range(len(costcenters)):
-        costCenter_id.addItem(str(costcenters[i]["costCenterId"]))
-        cosCenterList.append(str(costcenters[i]["costCenterId"]))
-        costCenter_text.addItem(str(costcenters[i]["depShortName"]))
+def load_CostCenter(current_branch_code):
+    """
+    Populates the cost center comboboxes, filtered by the current branch.
+    """
+    cosCenterList_ids = []  # Stores actual costCenterIds for the current branch
 
-    """ Add Other for not in DataDic """
-    costCenter_text.addItem("โปรดเลือกศูนย์ต้นทุน")
-    costCenter_id.addItem("Other")
+    # Clear existing items
+    costCenter_id.clear()
+    costCenter_text.clear()
 
-    if costCenterId.text() not in cosCenterList:
-        costCenter_text.setCurrentIndex(len(cosCenterList))
-        costCenter_id.setCurrentIndex(len(cosCenterList))
+    # Add a default placeholder/instruction item first
+    costCenter_text.addItem("โปรดเลือกศูนย์ต้นทุน...")  # Placeholder text for visible combobox
+    costCenter_id.addItem("")  # Corresponding empty value for the hidden ID combobox
+
+    # Filter costcenters based on the pwaCode matching the current_branch_code
+    all_costcenters = reference["referances"]["pwawaterwork"]["costcenters"]
+    filtered_costcenters = [
+        cc for cc in all_costcenters
+        if cc.get("pwaCode") == current_branch_code
+    ]
+
+    for center_data in filtered_costcenters:
+        costCenter_id.addItem(str(center_data["costCenterId"]))
+        cosCenterList_ids.append(str(center_data["costCenterId"]))
+        costCenter_text.addItem(str(center_data["depShortName"]))
+
+    # Attempt to set the current selection based on the feature's existing costCenterId
+    current_feature_cost_center_id_str = costCenterId.text()
+    if current_feature_cost_center_id_str and current_feature_cost_center_id_str != 'NULL':
+        try:
+            # Find the index of the existing costCenterId in the populated (filtered) combobox
+            # Note: costCenter_id items now start after the placeholder at index 0
+            idx = costCenter_id.findText(current_feature_cost_center_id_str)
+            if idx != -1:  # Found
+                costCenter_id.setCurrentIndex(idx)
+                costCenter_text.setCurrentIndex(idx)
+            else:  # Not found (e.g., from another branch, invalid, or not in filtered list)
+                costCenter_id.setCurrentIndex(0)  # Default to placeholder
+                costCenter_text.setCurrentIndex(0)
+        except Exception as e:
+            print(f"Error finding/setting cost center: {e}")
+            costCenter_id.setCurrentIndex(0) # Default to placeholder
+            costCenter_text.setCurrentIndex(0)
     else:
-        costCenter_id.setCurrentText(costCenterId.text())
-        costCenter_text.setCurrentIndex(costCenter_id.currentIndex())
-
-
-def load_PwaStation():
-    stationList = []
-    pwaStations = reference["referances"]["pwawaterwork"]["pwaStations"]
-    for i in range(len(pwaStations)):
-        pwaStation_id.addItem(str(pwaStations[i]["stationId"]))
-        stationList.append(str(pwaStations[i]["stationId"]))
-        pwaStation_text.addItem(str(pwaStations[i]["description"]))
-
-    """ Add Other for not in DataDic """
-    pwaStation_text.addItem("โปรดเลือกประเภทสถานที่")
-    pwaStation_id.addItem("Other")
-
-    if pwaStationId.text() not in stationList:
-        pwaStation_text.setCurrentIndex(len(stationList))
-        pwaStation_id.setCurrentIndex(len(stationList))
-    else:
-        pwaStation_id.setCurrentText(pwaStationId.text())
-        pwaStation_text.setCurrentIndex(pwaStation_id.currentIndex())
+        # No valid existing value, default to placeholder
+        costCenter_id.setCurrentIndex(0)
+        costCenter_text.setCurrentIndex(0)
 
 
 def costCenter_change():
     costCenter_id.setCurrentIndex(costCenter_text.currentIndex())
-    if costCenter_id.currentText() != "Other":
+    selected_id_value = costCenter_id.currentText()
+    if selected_id_value: # Not empty (i.e., not the placeholder)
         costCenterId.setText(costCenter_id.currentText())
     else:
-        costCenterId.setText(None)
+        costCenterId.setText(None) # Or use "" if your attribute field expects an empty string for NULL
+
+
+def load_PwaStation():
+    """
+    Populates the PWA station comboboxes.
+    Note: This function is not currently filtered by branch in this modification.
+          If branch-specific filtering is needed for PWA stations, a similar
+          logic to load_CostCenter would be required.
+    """
+    stationList_ids = []
+
+    pwaStation_id.clear()
+    pwaStation_text.clear()
+
+    # Add a default placeholder/instruction item first
+    pwaStation_text.addItem("โปรดเลือกประเภทสถานที่...") # Placeholder text
+    pwaStation_id.addItem("") # Corresponding empty value
+
+    all_pwaStations = reference["referances"]["pwawaterwork"]["pwaStations"]
+    # If filtering by branch were needed for stations, it would be applied here.
+    # For now, we assume all stations are globally available or filtering is not required.
+    
+    for station_data in all_pwaStations:
+        pwaStation_id.addItem(str(station_data["stationId"]))
+        stationList_ids.append(str(station_data["stationId"]))
+        pwaStation_text.addItem(str(station_data["description"]))
+
+    # Attempt to set the current selection based on the feature's existing pwaStationId
+    current_feature_station_id_str = pwaStationId.text()
+    if current_feature_station_id_str and current_feature_station_id_str != 'NULL':
+        try:
+            idx = pwaStation_id.findText(current_feature_station_id_str)
+            if idx != -1: # Found
+                pwaStation_id.setCurrentIndex(idx)
+                pwaStation_text.setCurrentIndex(idx)
+            else: # Not found
+                pwaStation_id.setCurrentIndex(0) # Default to placeholder
+                pwaStation_text.setCurrentIndex(0)
+        except Exception as e:
+            print(f"Error finding/setting PWA station: {e}")
+            pwaStation_id.setCurrentIndex(0)
+            pwaStation_text.setCurrentIndex(0)
+    else:
+        # No valid existing value, default to placeholder
+        pwaStation_id.setCurrentIndex(0)
+        pwaStation_text.setCurrentIndex(0)
 
 
 def pwaStation_change():
     pwaStation_id.setCurrentIndex(pwaStation_text.currentIndex())
-    if pwaStation_id.currentText() != "Other":
+    selected_id_value = pwaStation_id.currentText()
+    if selected_id_value: # Not empty (i.e., not the placeholder)
         pwaStationId.setText(pwaStation_id.currentText())
     else:
-        pwaStationId.setText(None)
+        pwaStationId.setText(None) # Or use ""
